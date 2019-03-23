@@ -1,0 +1,31 @@
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4>Novo funcionario</h4>
+        <div class="row">
+            <div class="input-field col s12">
+                <input [(ngModel)]="funcionario.nome" type="text">
+                <label for="">Nome</label>
+            </div>
+            <div class="input-field col s12">
+                <input [(ngModel)]="funcionario.login" type="text">
+                <label for="">Login</label>
+            </div>
+            <div class="input-field col s12">
+                <input [(ngModel)]="funcionario.senha" type="password">
+                <label for="">Senha</label>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-close waves-effect waves-green btn-flat" (click)="add()">Salvar</a>
+    </div>
+</div>
+<div class="container">
+    <app-lista-funcionario></app-lista-funcionario>
+</div>
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large blue modal-trigger" href="#modal1">
+        <i class="large material-icons">add</i>
+    </a>
+</div>

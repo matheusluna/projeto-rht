@@ -1,0 +1,26 @@
+<nav>
+  <div class="nav-wrapper blue">
+    <a routerLink = "/" class="brand-logo"><i class="large material-icons">arrow_back</i>Cadastro</a>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="input-field col s12">
+      <input [(ngModel)]="gerente.nome" class="blue-text" type="text">
+      <label for="">Nome Completo</label>
+    </div>
+    <div class="input-field col s12 m6">
+      <input [(ngModel)]="gerente.login" class="blue-text" type="text">
+      <label for="">Login</label>
+    </div>
+    <div class="input-field col s12 m6">
+        <input [(ngModel)]="gerente.senha" class="blue-text" type="password">
+        <label for="">Senha</label>
+      </div>
+  </div>
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large blue" (click) = "add()">
+      <i class="large material-icons">done</i>
+    </a>
+  </div>
+</div>
